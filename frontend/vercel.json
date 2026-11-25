@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://jansetu-ai-vwoa.onrender.com/api/:path*"
+      "destination": "https://jansetu-ai-v0-2.onrender.com/api/:path*"
     }
   ]
 }
