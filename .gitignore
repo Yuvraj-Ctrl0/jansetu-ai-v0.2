@@ -21,3 +21,6 @@ scheme_review.csv
 phase1-original-backup/
 backend/jansetu_schemes_export.json
 phase1-local-backup.sql
+
+# Local SQLite database (never commit)
+backend/instance/
