@@ -111,9 +111,10 @@ export default function App() {
 
   let page;
   if (loadError) {
-    page = <section className="page"><h1>Could not load JanSetu</h1><p className="form-error">{loadError}</p></section>;
+    page = <section className="page"><h1>Could not load JanSetu</h1><p className="form-error">{loadError}</p>
+      <button type="button" className="btn btn-primary" onClick={() => window.location.reload()}>Try again</button></section>;
   } else if (!meta) {
-    page = <section className="page"><p className="muted">Loading schemes…</p></section>;
+    page = <section className="page"><p className="muted">Loading schemes… If the server was asleep, this takes about a minute.</p></section>;
   } else if (needsAuth && !signedIn) {
     page = <Auth api={api} onSignedIn={onSignedIn} />;
   } else if (path === '/schemes') {
